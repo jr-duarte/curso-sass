@@ -1,0 +1,90 @@
+sass -i (abre o shell interativo, somar, somar cores etc...)
+
+Tipos de dados:
+Números;
+Cadeias de texto;
+Cores;
+Boleanos;
+Nulos;
+Listas;
+Mapas.
+
+Type-of (verifica o tipo de dado).
+
+-----------------------------------------------------------
+Importação
+
+@import
+
+Extensões: .scss, .sass ou .css;
+Começando com http://
+nome do arquivo uma url()
+E se o @import tiver qualquer media queries.
+
+-----------------------------------------------------------
+Partials
+
+Pequenos trechos de código, não são compilados
+
+_reset.scss, _variaveis.scss
+
+
+-----------------------------------------------------------
+Mixins
+
+Bloco de código escrito com sintaxe sass, que pode ser inclído uma ou mais
+vezes em um arquivo sass ao ser compilado.
+
+//Sem parâmetro
+Ex: @mixin colorir{
+	background:black;
+	color:white;
+}
+
+Para importar
+@include colorir
+
+
+-----//------
+
+//Com parâmetro
+Ex: @mixin colorir($cor-bg, $cor-texto){
+	background:$cor-bg;
+	color:$cor-texto;
+}
+
+Para importar
+@include colorir(black, white);
+
+---//---
+
+//números de argumentos desconhecidos
+@mixin box-shadow($sombras...){
+}
+
+
+
+---------------------------------------------------------
+Extend
+
+A mesma coisa que herança na orientação a objetos
+
+Ex: .erro{
+color:red
+}
+
+.atenção{
+@extend .erro
+}
+
+---//---
+
+placeholders não é processado no CSS
+%erro{
+}
+
+
+
+
+
+

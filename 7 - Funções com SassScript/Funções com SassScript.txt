@@ -1,0 +1,62 @@
+@function - Diferente dos mixins ela tem retorno.
+
+Ex:
+@function quadrado ($valor, $und: px){
+	$res: $valor * $valor;
+	@return $res + $und;
+}
+
+h1{
+	font-size: quadrado(6);
+}
+
+
+-------------------------//----------------------
+
+Funções internas do Sass
+
+
+String
+
+Remover aspas - unquote($string)  Adicionar aspas - quote($string)
+
+contagem de caracteres - str-length($string)     
+
+todos caracteres em maiusculo - to-upper-case($string)
+
+todos caracteres em minisculos - to-lower-case($string)
+
+----//-----
+números
+
+percentagem($num)
+round(#arredonda)
+ceil ($arred-prox)
+floor($arred-ante)
+min($numeros...)
+max($numeros...)
+random($limite)
+
+---//---
+
+Listas
+
+length($lista)
+
+//retorna o item da posição informada
+nth($lista, $pos-item)
+
+//altera o valor da posição informada
+set-nth($lista, $pos-item, $novo-valor)
+
+---//---
+
+Mapas
+
+map-get($mapa, $chave)
+
+map-merge($map1, $map2)
+
+map-remove($mapa, $chaves...)
+
+

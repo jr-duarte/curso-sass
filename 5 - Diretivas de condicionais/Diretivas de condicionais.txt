@@ -1,0 +1,8 @@
+Diretivas de controle
+@if, @else, @else if, @for, @each, @while
+
+Ex: @if $cor == red){
+.............
+}@else if ($tamanho > 10){
+.....
+}

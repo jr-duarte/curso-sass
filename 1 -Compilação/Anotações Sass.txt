@@ -1,0 +1,16 @@
+sass arquivos.scss arquivo.css
+
+sass --watch arquivo.scss:arquivo.css
+
+//Monitorar pastas
+sass --watch scss:css
+
+Nested (Padrão) - Alinhado
+Expanded - Css tipico
+Compact - Compacto cada um em uma linha.
+Compressed - Tudo na mesma linha
+
+sass arquivo.scss:arquivo.css --style compact
+
+
+

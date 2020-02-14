@@ -1,0 +1,32 @@
+@for
+
+
+Ex: @for $i from 1 though 4{
+ div.item-#{$i}{width: 20% * $i;}
+}
+
+thougt - 1 ao 4
+to - 1 ao 3
+
+
+-----------------------------------//---------------------------
+@each - Percorre uma lista
+
+
+Ex:
+$redes-sociais: (insta, face, youtube);
+
+@each $icon in $redes-sociais {
+	background: url(img/#{$icon}.png);
+}
+--------------------------------------//------------------------
+$cont: 1;
+@while $cont < 5 {
+	.item-#{$cont}{
+		width: 50px * $cont
+	}
+
+	$cont: $cont + 1	
+}
+
+-----------------------------//--------------------
